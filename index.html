@@ -46,12 +46,42 @@
 			<section id="intro" class="main style1 dark fullscreen">
 				<div class="content container 75%">
 					
-
-					<header>
-						<h2>Inside the Life of Yash Bolisetty</h2>
+						<p></p>
+					
+						<h2><div class="content"><h1>Yash Bolisetty</h1><p  ><span><p id="myTypingText"></p>
+<script>
+document.getElementById("myTypingText").innerHTML = "|";
+var text = "A Progammer  ";
+var textArray = text.split("");
+var loopTimer;
+function frameLooper() {
+	if(textArray.length > 0) {
+		document.getElementById("myTypingText").innerHTML += textArray.shift();
+		document.getElementById("myTypingText").innerHTML += "|";
+		document.getElementById("myTypingText").innerHTML =	document.getElementById("myTypingText").innerHTML.replace("|", "");
+	} else {
+       document.getElementById("myTypingText").innerHTML = "|";
+        clearTimeout(loopTimer); 
+        loopTimer = 0;
+        if(text=="A Progammer  ")
+			text = "A Hacker  ";
+		else if(text=="A Hacker  ")
+			text = "A Dreamer  ";
+		else if(text=="A Dreamer  ")
+			text = "A Designer  ";
+		else if(text=="A Designer  ")
+			text = "A Promgrammer  ";
+		textArray = text.split("")
+	}
+	loopTimer = setTimeout('frameLooper()',250);
+}
+frameLooper();
+</script></h2>
 					</header>
-					<p> <strong>Program. </strong><strong>Hack. </strong><strong>Dream. </strong> <a </a></p>
+							
 
+					<p> <strong> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> </strong> <a </a></p>
+		
 					<footer>
 						<a href="#one" class="button style2 down">More</a>
 					</footer>

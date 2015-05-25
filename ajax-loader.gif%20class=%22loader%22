@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+<head>
+	<title>404 - Error: 404</title>
+
+	<link rel="stylesheet" href="/templates/visia/stylesheets/reset.css" type="text/css" />
+	<link rel="stylesheet" href="/templates/visia/stylesheets/grid.css" type="text/css" />
+	<link rel="stylesheet" href="/templates/visia/stylesheets/style.css" type="text/css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" type="text/css"  />
+	<style>.parallax-bg1 { background-image: url( http://www.bangrakthaicuisine.com/images/hero.jpg); }</style>
+
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="/templates/visia/stylesheets/ie.css" />
+	<![endif]-->
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript">
+/* =Document Ready Trigger
+-------------------------------------------------------------- */
+jQuery(document).ready(function(){
+
+	function initializeVisia() {
+		"use strict";
+
+		//IE9 RECOGNITION
+		if (jQuery.browser.msie && jQuery.browser.version == 9) {
+			jQuery('html').addClass('ie9');
+		}
+		//RESPONSIVE HEADINGS
+		jQuery("h1").fitText(1.8, { minFontSize: '30px', maxFontSize: '52px' });
+
+		//HERO DIMENSTION AND CENTER
+		(function() {
+		    function heroInit(){
+		       var hero = jQuery('.hero'),
+					ww = jQuery(window).width(),
+					wh = jQuery(window).height(),
+					heroHeight = wh;
+
+				hero.css({
+					height: heroHeight+"px",
+				});
+
+				var heroContent = jQuery('.hero .content'),
+					contentHeight = heroContent.height(),
+					parentHeight = hero.height(),
+					topMargin = (parentHeight - contentHeight) / 2;
+
+				heroContent.css({
+					"margin-top" : topMargin+"px"
+				});
+		    }
+
+		    jQuery(window).on("resize", heroInit);
+		    jQuery(document).on("ready", heroInit);
+		})();
+
+		//HERO TICKER
+		var current = 1; 
+		var height = jQuery('.ticker').height(); 
+		var numberDivs = jQuery('.ticker').children().length; 
+		var first = jQuery('.ticker h1:nth-child(1)'); 
+		setInterval(function() {
+		    var number = current * -height;
+		    first.css('margin-top', number + 'px');
+		    if (current === numberDivs) {
+		        first.css('margin-top', '0px');
+		        current = 1;
+		    } else current++;
+		}, 2500);
+
+	}
+
+	initializeVisia();
+	//initializePortfolio();
+
+});
+/* END ------------------------------------------------------- */
+	</script>
+</head>
+
+<body>
+
+	<!-- Begin Navigation -->
+	<nav class="clearfix">
+		<!-- Logo -->
+		<div class="logo">
+			<a href="/">
+				<img src="http://www.bangrakthaicuisine.com/images/Bangrak-Thai-Cuisine.png" alt="Bangrak Thai Cuisine logo" width="320" height="47" /></a>
+		</div>
+	</nav>
+	<!-- End Navigation -->	
+
+
+	
+	<!-- Begin Hero -->
+	<section id="section1" class="parallax-bg1 hero parallax dark clearfix">
+
+		<!-- Content -->
+		<div class="content container">
+			<div class="ticker">
+				<h1>404</h1>
+				<h1>Category not found</h1>
+			</div>
+			<ul class="call-to-action">
+				<li>
+					<a class="button" href="" 
+						title="Go to the Home Page">Home Page</a>
+				</li>
+			</ul>
+
+			<p></p>
+		</div>
+
+	</section>
+	<!-- End Hero -->
+
+	<footer id="footer" class="clearfix">
+		<div class="container">
+
+			<!-- Copyright -->
+			<div class="copyright grid-full">
+				<h6>© {year} Bangrak Thai Cuisine.</h6>
+			</div>
+			<!-- End Copyright -->
+		</div>
+	</footer>
+
+
+<script charset="utf-8" type="text/javascript" src="/templates/visia/javascripts/waypoints.js"></script>
+<script charset="utf-8" type="text/javascript" src="/templates/visia/javascripts/parallax.js"></script>
+<script charset="utf-8" type="text/javascript" src="/templates/visia/javascripts/jquery.fittext.js"></script>
+</body>
+</html>

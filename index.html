@@ -51,7 +51,7 @@
 						<h2><div class="content"><h1>Yash Bolisetty</h1><p  ><span><p id="myTypingText"></p>
 <script>
 document.getElementById("myTypingText").innerHTML = "|";
-var text = "A Progammer  ";
+var text = "A  Progammer  ";
 var textArray = text.split("");
 var loopTimer;
 function frameLooper() {
@@ -64,13 +64,13 @@ function frameLooper() {
         clearTimeout(loopTimer); 
         loopTimer = 0;
         if(text=="A Progammer  ")
-			text = "A Hacker  ";
-		else if(text=="A Hacker  ")
-			text = "A Dreamer  ";
-		else if(text=="A Dreamer  ")
-			text = "A Designer  ";
-		else if(text=="A Designer  ")
-			text = "A Promgrammer  ";
+			text = "A  Hacker  ";
+		else if(text=="A  Hacker  ")
+			text = "A  Dreamer  ";
+		else if(text=="A  Dreamer  ")
+			text = "A  Designer  ";
+		else if(text=="A  Designer  ")
+			text = "A  Programmer  ";
 		textArray = text.split("")
 	}
 	loopTimer = setTimeout('frameLooper()',250);

@@ -169,12 +169,7 @@ Enjoy responsibly!
     }
 
 
-    #content {
-        margin: 0 auto;
-        padding-bottom: 50px;
-        width: 80%;
-        max-width: 978px;
-    }  
+
 
 
 
@@ -312,18 +307,6 @@ Enjoy responsibly!
         text-shadow: none !important;*/
     }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
 
     /*
      * Don't show links for images, or javascript/internal links

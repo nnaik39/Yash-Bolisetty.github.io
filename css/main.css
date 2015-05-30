@@ -19,13 +19,21 @@ Enjoy responsibly!
 
 .chromeframe {
     margin: 0.2em 0;
-
+    background: #ccc;
+    color: #000;
     padding: 0.2em 0;
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+p {
+    line-height: 1.33em;
+    color: #7E7E7E;
+}
+h1 {
+    color: #EEEEEE;
+}
 
 #loader-wrapper {
     position: fixed;
@@ -167,9 +175,16 @@ Enjoy responsibly!
     .no-js #loader-wrapper {
         display: none;
     }
+    .no-js h1 {
+        color: #222222;
+    }
 
-
-
+    #content {
+        margin: 0 auto;
+        padding-bottom: 50px;
+        width: 80%;
+        max-width: 978px;
+    }  
 
 
 
@@ -300,13 +315,25 @@ Enjoy responsibly!
    ========================================================================== */
 
 @media print {
-    * {/*
+    * {
         background: transparent !important;
-        color: #000 !important; Black prints faster: h5bp.com/s 
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
         box-shadow: none !important;
-        text-shadow: none !important;*/
+        text-shadow: none !important;
     }
 
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
 
     /*
      * Don't show links for images, or javascript/internal links
@@ -324,7 +351,9 @@ Enjoy responsibly!
         page-break-inside: avoid;
     }
 
- 
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
 
     tr,
     img {
@@ -353,7 +382,7 @@ Enjoy responsibly!
 }
 
 /* 
-	Ok so you have made it this far, that means you are very keen to on my code. 
-	Anyway I don't really mind it. This is a great way to learn so you actually doing the right thing:)
-	Follow me @ihatetomatoes
+    Ok so you have made it this far, that means you are very keen to on my code. 
+    Anyway I don't really mind it. This is a great way to learn so you actually doing the right thing:)
+    Follow me @ihatetomatoes
 */

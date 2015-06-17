@@ -1,12 +1,8 @@
+
 @charset 'UTF-8';
 @import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900');
 @import url('font-awesome.min.css');
 
-/*
-	Big Picture by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 /*********************************************************************************/
 /* Basic                                                                         */
@@ -29,7 +25,9 @@
 			-ms-animation: none !important;
 			animation: none !important;
 		}
-
+		html {
+       overflow-y: scroll;
+}
 	body,input,textarea,select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
@@ -385,6 +383,7 @@
 
 	/* Button */
 		
+	
 		input[type="button"],
 		input[type="submit"],
 		input[type="reset"],
@@ -432,7 +431,8 @@
 					bottom: 0;
 					border-bottom: 0;
 					border-radius: 3em 3em 0 0;
-					height: 4.5em;
+					height: 7em;
+					width: 6em;
 					margin-left: -2.5em;
 				}
 			
@@ -474,7 +474,6 @@
 				.button.style2.down {
 					background-image: url('images/arrow.svg');
 				}
-
 	/* Box */
 
 		.box {

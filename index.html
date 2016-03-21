@@ -38,6 +38,7 @@
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-wide.css" />
 			<link rel="stylesheet" href="css/style-normal.css" />
+            
 		</noscript>
 	
 
@@ -50,7 +51,155 @@
 <link rel='stylesheet' id='responsive-css'  href='http://juicyline.com/wp-content/themes/salient/css/responsive.css?ver=5.5.4' type='text/css' media='all' />
 <link rel='stylesheet' id='js_composer_front-css'  href='http://juicyline.com/wp-content/plugins/js_composer_salient/assets/css/js_composer.css?ver=4.3.5' type='text/css' media='all' />
 
+<style type = "text/css">
+.container2{
+    width: 110px;
+    height: 110px;
+    margin: 100px auto;
+}
+.prec2{
+    top: 30px;
+    position: relative;
+    font-size: 30px;
+}
 
+.circle2{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #E6F4F7;
+}
+
+.active-border2{
+    position: relative;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+
+    background-color:#39B4CC;
+    background-image:
+        linear-gradient(91deg, transparent 50%, #A2ECFB 50%),
+        linear-gradient(90deg, #A2ECFB 50%, transparent 50%);
+    
+}
+</style>
+<style type = "text/css">
+.container3{
+    width: 110px;
+    height: 110px;
+    margin: 100px auto;
+}
+.prec{
+    top: 30px;
+    position: relative;
+    font-size: 30px;
+}
+
+.circle3{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #E6F4F7;
+}
+
+.active-border3{
+    position: relative;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+
+    background-color:#39B4CC;
+    background-image:
+        linear-gradient(91deg, transparent 50%, #A2ECFB 50%),
+        linear-gradient(90deg, #A2ECFB 50%, transparent 50%);
+    
+}
+</style>
+<style type = "text/css">
+.container4{
+    width: 110px;
+    height: 110px;
+    margin: 100px auto;
+}
+.prec{
+    top: 30px;
+    position: relative;
+    font-size: 30px;
+}
+
+.circle4{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #E6F4F7;
+}
+
+.active-border4{
+    position: relative;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+
+    background-color:#39B4CC;
+    background-image:
+        linear-gradient(91deg, transparent 50%, #A2ECFB 50%),
+        linear-gradient(90deg, #A2ECFB 50%, transparent 50%);
+    
+}
+</style>
+
+<style type = "text/css">
+.containerone{
+    width: 110px;
+    height: 110px;
+    margin: 100px auto;
+}
+.prec{
+    top: 30px;
+    position: relative;
+    font-size: 30px;
+}
+
+.circleone{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #E6F4F7;
+}
+
+.active-borderone{
+    position: relative;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+
+    background-color:#39B4CC;
+    background-image:
+        linear-gradient(91deg, transparent 50%, #A2ECFB 50%),
+        linear-gradient(90deg, #A2ECFB 50%, transparent 50%);
+    
+}
+</style>
 
 <style type="text/css">
 
@@ -593,6 +742,53 @@ frameLooper();
     <a id="to-top"><i class="icon-angle-up"></i></a>
 
 
+<div class="container2">
+    <div id="activeBorder2" class="active-border2">
+        <div id="circle2" class="circle2">
+            <span class="prec 100" id="prec2">0%</span>
+        </div>
+    </div>
+</div>
+<script>
+var i = 0 , prec;
+var degs = $("#prec2").attr("class").split(' ')[1];
+var activeBorder = $("#activeBorder2");
+
+setTimeout(function(){
+    if($("#circle2").is(":hover"))
+       loopit("c");
+    else
+       loopit("nc");
+},1);
+
+function loopit(dir){
+    if (dir == "c")
+        i++
+    else
+        i--;
+    if (i < 0)
+        i = 0;
+    if (i > degs)
+        i = degs;
+    prec = (100*i)/360;   
+    $(".prec").html(Math.round(prec)+"%");
+    
+    if (i<=180){
+        activeBorder.css('background-image','linear-gradient(' + (90+i) + 'deg, transparent 50%, #A2ECFB 50%),linear-gradient(90deg, #A2ECFB 50%, transparent 50%)');
+    }
+    else{
+        activeBorder.css('background-image','linear-gradient(' + (i-90) + 'deg, transparent 50%, #39B4CC 50%),linear-gradient(90deg, #A2ECFB 50%, transparent 50%)');
+    }
+    
+    setTimeout(function(){
+        if($("#circle2").is(":hover"))
+            loopit("c");
+        else
+           loopit("nc");
+    },1);
+    
+}
+</script>
 
 						<p>I have participated, competed, and won many of the competitions that I have participated in. Hackathons have become a new favorite in my list of accomplishments. I have recently won Most Awesome Hack at HackNC, where we developed an app to accomodate students with taking notes and recording lectures. I have participated in eCybermission, a research and technology competition, in which I was able to win both Honorary Mention, Second Place, and First Place at State Level. I am currently conducting research with two professors at the Masachusetts Institute of Technology in the field of biotechnology and I am currently working in a Harvard Startup as an Intern. I am also an aesthetic and functional iOS Developer, developing accompanying iOS Apps for two of my winning eCybermission projects. </p>
 						<center><a href="YashBolisettyResume.pdf">Full Resume</a></center>
@@ -620,8 +816,6 @@ frameLooper();
 				-->    		
 
 
-
-		
 
 					
 					<!-- Lightbox Gallery  -->

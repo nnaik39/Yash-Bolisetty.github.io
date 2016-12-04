@@ -1,627 +1,265 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--[if lt IE 7 ]> <html class="ie6" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en"> <![endif]-->
-<!--[if IE 7 ]> <html class="ie7" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en"> <![endif]-->
-<!--[if IE 8 ]> <html class="ie8" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en"> <![endif]-->
-<!--[if IE 9 ]> <html class="ie9" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en"> <![endif]-->
-<!--[if (gte IE 10)|!(IE)]><!--> <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en"> <!--<![endif]-->
-
-
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:title" content="kottke.org" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://kottke.org" />
-<meta property="og:image" content="http://kottke.org/images/2016/ios/180x180.png" />
-<meta property="og:site_name" content="kottke.org" />
-<meta property="og:description" content="home of fine hypertext products" />
-<meta property="fb:admins" content="549560637" />
-<meta property="fb:app_id" content="279322152122365" /><title>kottke.org - home of fine hypertext products</title>
-
-<link href="/images/2016/ios/32x32.png" rel="icon" type="image/png" sizes="32x32" />
-<link href="/images/2016/ios/180x180.png" rel="apple-touch-icon" sizes="180x180" />
-<link href="/images/2016/ios/167x167.png" rel="apple-touch-icon" sizes="167x167" />
-<link href="/images/2016/ios/152x152.png" rel="apple-touch-icon" sizes="152x152" />
-<link href="/images/2016/ios/120x120.png" rel="apple-touch-icon" sizes="120x120" />
-<link href="/images/2016/ios/80x80.png" rel="apple-touch-icon" sizes="80x80" />
-<link href="/images/2016/ios/76x76.png" rel="apple-touch-icon" sizes="76x76" />
-<link href="/images/2016/ios/40x40.png" rel="apple-touch-icon" sizes="40x40" />
-<link href="/images/2016/ios/192x192.png" rel="icon" sizes="192x192" />
-<link href="/images/2016/ios/128x128.png" rel="icon" sizes="128x128" />
-
-<script src="/templates/2016/js/jquery-1.11.3.min.js"></script>
-<script src="/templates/2016/js/jquery-migrate-1.2.1.min.js"></script>
-<script src="/templates/2016/js/bigfoot.js"></script>
-
-<script src="/templates/2016/js/updater.js" type="text/javascript"></script>
-<script type="text/javascript">intvId = setInterval ("getUpdates('/frontpage/updates/index.php?id=29069','updates')",600000);</script>
-
-<script src="/templates/2016/js/jquery.unveil.js"></script>
-
+<title>AMANDA GHASSAEI: HOME</title>
+<link rel="stylesheet" type="text/css" href="/main.css"/>
+<script type="text/javascript" src="/js/analytics.js"></script>
+<script src="/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="/js/jquery.lazyload.min.js" type="text/javascript"></script>
 <script>
-$(document).ready(function() {
-	$(".widescreen iframe").unveil(250);
-	$(".post iframe").unveil(250);
-	$(".widescreen img").unveil(150);
-	$(".post img").unveil(150);
+$(function(){
+  $("img.lazy").lazyload({
+    effect : "fadeIn"
+  });
 });
 </script>
-<script type="text/javascript">
-  window.MemberfulOptions = {site: "https://kottke.memberful.com"};
-
-  (function() {
-    var s   = document.createElement('script');
-
-    s.type  = 'text/javascript';
-    s.async = true;
-    s.src   = 'https://d35xxde4fgg0cx.cloudfront.net/assets/embedded.js';
-
-    setup = function() { window.MemberfulEmbedded.setup(); }
-
-    if(s.addEventListener) { s.addEventListener("load", setup, false); } else { s.attachEvent("onload", setup); }
-
-    ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
-  })();
-</script>
-
-<script type="text/javascript">
-	$.bigfoot(
-        {
-			numberResetSelector: ".post",
-			buttonMarkup: "<div class='bigfoot-footnote__container' aria-hidden=\"true\"> <button class=\"bigfoot-footnote__button\" id=\"{{SUP:data-footnote-backlink-ref}}\" data-footnote-number=\"{{FOOTNOTENUM}}\" data-footnote-identifier=\"{{FOOTNOTEID}}\" aria-hidden=\"true\" rel=\"footnote\" data-bigfoot-footnote=\"{{FOOTNOTECONTENT}}\"> <i class=\"fa fa-plus-circle\"></i> </button></div>"
-        }
-    );
-</script>
-
-<script type="text/javascript">
-$(document).ready(function() {
-	$(".post p a").attr("target","_blank");
-	$('.post p a[href^="http://kottke.org"]').removeAttr("target");
-	$(".post p sup a").removeAttr("target");
-	$(".post .footnote a:last-of-type").removeAttr("target");
-	$(".quicklinks-post a").attr("target","_blank");
-	$(".bling-bling a").attr("target","_blank");
-	$(".bling-job a").attr("target","_blank");
+<script>
+$(function(){
+  var blackOverlays = $(".blackOverlay");
+  blackOverlays.mouseover(function(){
+      $(this).stop().fadeTo(100, 0.7);
+  });
+  blackOverlays.mouseout(function(){
+      $(this).stop().fadeTo(300, 0.0);
+  });
 });
 </script>
+<style>
 
-<link rel="stylesheet" type="text/css" href="//cloud.typography.com/790324/737040/css/fonts.css" />
-<link rel="stylesheet" href="/templates/2016/css/font-awesome-4.7.0/css/font-awesome.min.css" />
-<link rel="stylesheet" href="/templates/2016/css/main.css?v=7" type="text/css" />
-<link rel="stylesheet" href="/templates/2016/css/bigfoot-default.css" type="text/css" />
+#homeCoverImg {background: url(../images/amoeba/coverImage/600.jpg) no-repeat center center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+}
 
+@media screen and (min-width: 800px) {
+    #homeCoverImg {background: url(../images/amoeba/coverImage/1200.jpg) no-repeat center center;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+    }
+}
+@media screen and (min-width: 1800px) {
+    #homeCoverImg {background: url(../images/amoeba/coverImage/2500.jpg) no-repeat center center;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+    }
+}
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.kottke.org/main" />
+</style>
+<script src="/js/jquery.waitforimages.js" type="text/javascript"></script>
+<script>
+    $(function(){
+        $("#homeCoverImg").hide();
+        $('#homeCoverImg').waitForImages(function() {
+            // All descendant images have loaded, now slide up.
+            $("#homeCoverImg").fadeIn();
+        });
+        var mainImg = $('#mainImageContainer');
+        var mainImgOverlay = $('.mainImgOverlay');
+        mainImg.mouseover(function(){
+          mainImgOverlay.stop().fadeTo(100, 0.7);
+        });
+        mainImg.mouseout(function(){
+          mainImgOverlay.stop().fadeTo(300, 0.0);
+        });
+    });
+</script>
 
 </head>
-<body  id="kottke-org">
+<body>
+<div id="homeBacker"></div>
+<a id="mainImageContainer" href="/projects/amoeba">
+    <div id="homeCoverImg">
+        <div class="mainImgOverlay blackOverlay">
+            <span>AMOEBA</span><br/>
+            a CAD/simulation tool for digital materials
+        </div>
+    </div>
 
-<div id="header"><a href="/">kottke.org<span id="head-br"><br /></span><span id="head-heart"> &nbsp;&hearts;&nbsp; </span>  <span id="head-sub">home of fine hypertext products</span></a></div>
+</a>
 
-<div id="top-nav-wide"><a href="/">home</a><a href="/about">about kottke.org</a><a href="/everfresh">archives + tags</a><a href="/members">membership!</a><div id="follow"><a href="http://twitter.com/kottke" aria-label="Follow kottke.org on Twitter" id="follow-twitter"><i class="fa fa-twitter"></i></a><a href="http://facebook.com/kottke.org" aria-label="Follow kottke.org on Facebook" id="follow-facebook"><i class="fa fa-facebook-square"></i></a><a href="http://bonus.kottke.org/" aria-label="Follow kottke.org on Tumblr" id="follow-tumblr"><i class="fa fa-tumblr-square"></i></a><a href="http://feeds.kottke.org/main" aria-label="Read kottke.org via RSS" id="follow-feed"><i class="fa fa-rss"></i></a></div></div>
-
-<div id="top-nav-medium"><a href="/about">about</a><a href="/everfresh">archives + tags</a><a href="/members">membership!</a><div id="follow"><a href="http://twitter.com/kottke" aria-label="Follow kottke.org on Twitter" id="follow-twitter"><i class="fa fa-twitter"></i></a><a href="http://facebook.com/kottke.org" aria-label="Follow kottke.org on Facebook" id="follow-facebook"><i class="fa fa-facebook-square"></i></a><a href="http://bonus.kottke.org/" aria-label="Follow kottke.org on Tumblr" id="follow-tumblr"><i class="fa fa-tumblr-square"></i></a><a href="http://feeds.kottke.org/main" aria-label="Read kottke.org via RSS" id="follow-feed"><i class="fa fa-rss"></i></a></div></div>
-
-<div id="top-nav-narrow"><a href="/about">about</a><a href="/everfresh">archives</a><a href="/members">members!</a></div>
-
-<div id="easel">
-
-<p id="updates"></p>
-
-<h2><a href="/16/11/the-atlas-of-design">The Atlas of Design</a></h2>
-
-<div class="meta">
-<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>&nbsp; Nov 21, 2016</span></div>
-</div>
-
-<p class="widescreen"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" width="1400" height="743" border="0" alt="Denali Map" data-src="http://also.kottke.org/misc/images/denali-map.jpg"></p>
-
-
-<div class="post">
-
-
-
-<p>The North American Cartographic Information Society has published the third volume of <a href="http://atlasofdesign.org/">The Atlas of Design</a>, a book consisting of &ldquo;beautiful and inspiring maps from around the world&rdquo;.</p>
-
-<p>National Geographic <a href="http://news.nationalgeographic.com/2016/11/best-new-maps-atlas-design/">took a look at some of the maps</a> included in the book.</p>
-
-<blockquote>
-<p>The striking panorama above of Denali and the Alaska Range was created by draping satellite imagery over a three-dimensional model of the terrain. Brooke Marston, a cartographer at the U.S. State Department&rsquo;s Bureau of Intelligence and Research, was inspired by the Austrian artist Heinrich Berann, who is famed for his beautiful panoramas of mountain ranges.</p>
-
-<p>While Berann took some artistic license with the precise location and positioning of mountains in his panoramas, Marston&rsquo;s map is true to the geography. The oblique, bird&rsquo;s-eye view emphasizes the sheer size of the mountains while maintaining a closeness with the viewer. &ldquo;Good oblique mapping can transport the viewer straight into the landscape,&rdquo; Elmer says. &ldquo;This map makes me feel lost among the jagged, cold, majestic mountains just looking at it.&rdquo;</p>
-</blockquote>
-
-
-<div class="entry-tags-title">More about...</div>
-<ul class="entry-tags">
-<li><a href="/tag/books">books</a></li><li><a href="/tag/design">design</a></li><li><a href="/tag/maps">maps</a></li><li><a href="/tag/The%20Atlas%20of%20Design">The Atlas of Design</a></li>
+<div id="menu">
+<ul>
+<li class="leftTxt"><a id="selectedMenuItem">HOME</a></li>
+<li class="centerTxt"><a href="/projects/">PROJECTS</a></li>
+<li class="rightTxt"><a href="/about">ABOUT</a></li>
 </ul>
 
 </div>
+<div class="homeWrapper">
+<div id="contentWrapper" class="fullWidth coverImage">
+<ul class="homeGrid gridLayout">
+<li>
+    <a href="http://git.amandaghassaei.com/TrussOptimization2D/" target="_blank">
+        <img data-original="images/trussoptimization2d/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>TRUSS OPTIMIZATION<br/><br/>gradient-based optimization of 2D trusses</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="http://git.amandaghassaei.com/ShellFormFinding/" target="_blank">
+        <img data-original="images/shellformfinding/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>SHELL FORM FINDING<br/><br/>real-time simulation tool for architectural thin-shell forms</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="http://git.amandaghassaei.com/MichellStructures/" target="_blank">
+        <img data-original="images/michell/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>MICHELL STRUCTURES<br/><br/>static analysis of michell structures</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="/projects/shaders">
+        <img data-original="images/shaders/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>SHADERS<br/><br/>experiments with WebGL shaders</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="http://git.amandaghassaei.com/Linkages/" target="_blank">
+        <img data-original="images/linkages/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>LINKAGES <br/><br/>a physics-based linkage optimization tool, written in javascript</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="/projects/compass">
+        <img data-original="images/compass/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>GIMBAL<br/><br/>work in progress</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="/projects/genetic_images">
+        <img data-original="images/genetic_images/main.gif" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>GENETIC IMAGES<br/><br/>reconstructing images by genetic algorithm</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="/projects/sugarcube">
+        <img data-original="images/sugarcube/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>SUGARCUBE<br/><br/>a multi-functional, standalone MIDI instrument</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="/projects/teaching">
+        <img data-original="images/teaching/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>TEACHING<br/><br/>various workshops in the SF area</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="/projects/laser_cut_record">
+        <img data-original="images/laserrecord/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>LASER CUT RECORD<br/><br/>on acrylic, wood, paper</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="/projects/3D_printed_record">
+        <img data-original="images/3drecord/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>3D PRINTED RECORD<br/><br/>converting digital audio into a physical, functional LP</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="/projects/arduinodsp ">
+        <img data-original="images/arduinodsp/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>ARDUINODSP<br/><br/>experiments with digital signal processing using Arduino</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="/projects/glitchbox">
+        <img data-original="images/glitchbox/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>GLITCHBOX<br/><br/>a sample-based drum machine, looper, and MIDI sequencer</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="/projects/ambient_synthesis">
+        <img data-original="images/ambient_synthesis/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>AMBIENT SYNTHESIS<br/><br/>an interactve sound sculpture</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="/projects/monome">
+        <img data-original="images/monome/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>MONOME PATCHES<br/><br/>a collection of MaxMSP patches I've written for the monome</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="/projects/mechanical_walking_machine">
+        <img data-original="images/walker/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>MECHANICAL WALKING MACHINE<br/><br/>a mechanical leg linkage inspired by the work of Theo Jansen</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="/projects/multitouch">
+        <img data-original="images/multitouch/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>MULTITOUCH<br/><br/>development of a thin, infrared-based multitouch system</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="https://github.com/amandaghassaei" target="_blank">
+        <img data-original="images/github/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>GITHUB<br/><br/>view my code on Github</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="http://www.instructables.com/member/amandaghassaei/" target="_blank">
+        <img data-original="images/instructables/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>INSTRUCTABLES<br/><br/>a collection of step-by-step projects and tutorials I've posted on instructables.com</span>
+        </div>
+    </a>
+</li>
+<li>
+    <a href="/projects/maxmsp">
+        <img data-original="images/maxmsp/main.jpg" class="thumbnail lazy">
+        <div class="blackOverlay homeOverlay">
+        <span>MAXMSP<br/><br/>various patches and projects</span>
+        </div>
+    </a>
+</li>
 
-<div class="post-sidebar">
-
-<div class="bling-title"><a href="http://decknetwork.net/" target="_blank">ad via the deck</a></div>
-<div class="bling-bling"><script type="text/javascript">
-//<![CDATA[
-(function(id) {
- document.write('<script type="text/javascript" src="' +
-   'http://connect.decknetwork.net/deck' + id + '_js.php?' +
-   (new Date().getTime()) + '"></' + 'script>');
-})("JK");
-//]]>
-</script></div>
-
-<div class="bling-title"><a href="https://weworkremotely.com/?source=kottke" target="_blank">job board for remote work</a></div>
-<div class="bling-job"><a href="https://weworkremotely.com/?source=kottke" target="_blank"><img src="/images/2016/we-work-remotely.jpg" width="225" height="65" border="0" alt="We Work Remotely" /></a><script src="https://weworkremotely.com/jobs/random.js" type="text/javascript"></script></div>
-
-</div><div class="post-spacer-hr"></div>
-
-<div class="quicklinks-post">
-<div class="quicklinks-lead">
-<i class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp; quick links, updated constantly</div>
-
-<p><a href="http://www.ted.com/talks/steven_johnson_how_play_leads_to_great_inventions">Steven Johnson: How play leads to great inventions</a></p>
-<p><a href="https://www.amazon.com/exec/obidos/ASIN/B000NTPDSW/ref=nosim/0sil8">Instant buy: restored Godfather trilogy on Blu-ray for only $17</a></p>
-<p><a href="https://westaway.co/burts-bees-disrupted-clorox/">This seems like a rare good acquisition of a smaller principled company: How Burt's Bees Disrupted Clorox</a></p>
-<p><a href="http://www.newyorker.com/culture/persons-of-interest/how-to-restore-your-faith-in-democracy">Philosopher Charles Taylor: "democracy is a fiction that we're trying to realize"</a></p>
-<p><a href="http://www.newyorker.com/magazine/2016/11/28/the-speculative-dread-of-black-mirror">Profile of Charlie Brooker and Black Mirror from The New Yorker</a></p>
-<p><a href="http://www.theonion.com/article/weird-new-cereal-sets-tone-for-first-weekend-at-di-36668">Weird New Cereal Sets Tone For First Weekend At Divorced Dad's</a></p>
-<p><a href="http://ny.eater.com/2016/11/4/13517256/keith-mcnally-interview">There's something -- I don't know, charming? -- about this interview with restaurateur Keith McNally.</a></p>
-<p><a href="https://www.amazon.com/exec/obidos/ASIN/1421589893/ref=nosim/0sil8">The Pok&eacute;mon Cookbook! (Note: this book does not teach you how to cook Pok&eacute;mon characters.)</a></p>
-<p><a href="https://www.instagram.com/p/BMvzBaphAma/">Sometimes Dave Chappelle sings Radiohead's Creep at the SNL afterparty and everything is ok</a></p>
-<p><a href="http://www.newyorker.com/magazine/2016/11/28/obama-reckons-with-a-trump-presidency">David Remnick writes about Obama, just before and after the 2016 election</a></p>
-
-<p class="evensmaller">There's no quick links archive yet. If you'd like to see 'em all, <a href="http://twitter.com/kottke" style="font-weight:600;color:#55acee;">follow @kottke on Twitter</a>.</p>
-</div>
-
-
-<div class="post-spacer-hr"></div>
-
-<h2><a href="/16/11/nasas-analysis-of-seemingly-impossible-engine-it-works">NASA&#8217;s analysis of seemingly impossible engine: it works</a></h2>
-
-<div class="meta">
-<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>&nbsp; Nov 21, 2016</span></div>
-</div>
-
-
-
-<div class="post">
-
-<p><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" width="748" height="535" border="0" alt="EM Drive NASA" data-src="http://also.kottke.org/misc/images/em-drive-nasa.jpg"></p>
-
-<p>NASA has <a href="http://arc.aiaa.org/doi/10.2514/1.B36120">published</a> their highly anticipated and peer-reviewed analysis of the EM Drive and <a href="http://www.sciencealert.com/it-s-official-nasa-s-peer-reviewed-em-drive-paper-has-finally-been-published">they&rsquo;ve concluded the engine works</a> despite appearing to violate Newton&rsquo;s third law of motion.</p>
-
-<blockquote>
-<p>In case you&rsquo;ve missed the hype, the EM Drive, or Electromagnetic Drive, is a propulsion system first proposed by British inventor Roger Shawyer back in 1999.</p>
-
-<p>Instead of using heavy, inefficient rocket fuel, it bounces microwaves back and forth inside a cone-shaped metal cavity to generate thrust. </p>
-
-<p>According to Shawyer&rsquo;s calculations, the EM Drive could be so efficient that it could power us to Mars in just 70 days. </p>
-
-<p>But, there&rsquo;s a not-small problem with the system. It defies Newton&rsquo;s third law, which states that everything must have an equal and opposite reaction.</p>
-
-<p>According to the law, for a system to produce thrust, it has to push something out the other way. The EM Drive doesn&rsquo;t do this.</p>
-
-<p>Yet in test after test it continues to work. Last year, NASA&rsquo;s Eagleworks Laboratory team got their hands on an EM Drive to try to figure out once and for all what was going on.</p>
-</blockquote>
-
-<p><a href="http://arstechnica.com/science/2015/08/heres-why-scientists-havent-invented-an-impossible-space-engine/">There&rsquo;s a lot of skepticism</a> around this project, but NASA&rsquo;s review is definitely a boost to the EM Drive&rsquo;s credibility.</p>
-
-
-<div class="entry-tags-title">More about...</div>
-<ul class="entry-tags">
-<li><a href="/tag/NASA">NASA</a></li><li><a href="/tag/physics">physics</a></li><li><a href="/tag/science">science</a></li>
 </ul>
-
 </div>
-
-<div class="post-spacer-hr"></div>
-
-<h2><a href="/16/11/actors-movie-accents-rated">Actors&#8217; movie accents, rated</a></h2>
-
-<div class="meta">
-<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>&nbsp; Nov 21, 2016</span></div>
 </div>
-
-<p class="widescreen embedded"><iframe width="100%" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" frameborder="0" allowfullscreen data-src="https://www.youtube.com/embed/NvDvESEXcgE?rel=0"></iframe></p>
-
-
-<div class="post">
-
-
-
-<p><a href="http://www.eriksinger.com/">Erik Singer</a> is a dialect coach who works with actors to perfect different accents and dialects. In this video, he quickly analyzes the performances of 32 actors based on their use of accents. Pretty fascinating to watch. He singles out Philip Seymour Hoffman&rsquo;s portrayal of Truman Capote as an exemplary use of the proper accent. High marks also go to Kate Winslet doing a Polish accent, Idris Elba&rsquo;s South African accent while portraying Nelson Mandela (and his Bal&rsquo;more accent in The Wire), and Cate Blanchett playing Katherine Hepburn in The Aviator.</p>
-
-<p>Nicholas Cage in Con Air and Tom Cruise in Far and Away? Well, let&rsquo;s just say they couldn&rsquo;t pahk the cah in Hahvahd Yahd.</p>
-
-
-<div class="entry-tags-title">More about...</div>
-<ul class="entry-tags">
-<li><a href="/tag/Erik%20Singer">Erik Singer</a></li><li><a href="/tag/language">language</a></li><li><a href="/tag/movies">movies</a></li><li><a href="/tag/video">video</a></li>
-</ul>
-
-</div>
-
-<div class="post-spacer-hr"></div>
-
-<h2><a href="/16/11/beastie-boys-daft-punk-mashup">Beastie Boys / Daft Punk mashup</a></h2>
-
-<div class="meta">
-<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>&nbsp; Nov 21, 2016</span></div>
-</div>
-
-
-
-<div class="post">
-
-<p>This is pretty simple: 8 songs from the Beastie Boys <a href="https://coinsmakeyoudance.bandcamp.com/album/daft-science">remixed using beats and samples from Daft Punk</a>. If you need further prompting, it&rsquo;s probably not for you.</p>
-
-<p class="widescreen embedded"><iframe style="border: 0;" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" seamless width="100%" data-src="https://bandcamp.com/EmbeddedPlayer/album=1157337962/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/"><a href="http://coinsmakeyoudance.bandcamp.com/album/daft-science">Daft Science by Coins</a></iframe></p>
-
-
-<div class="entry-tags-title">More about...</div>
-<ul class="entry-tags">
-<li><a href="/tag/Beastie%20Boys">Beastie Boys</a></li><li><a href="/tag/Daft%20Punk">Daft Punk</a></li><li><a href="/tag/music">music</a></li><li><a href="/tag/remix">remix</a></li>
-</ul>
-
-</div>
-
-<div class="post-spacer-hr"></div>
-
-<h2><a href="/16/11/the-last-steps-on-the-moon">The last steps on the Moon</a></h2>
-
-<div class="meta">
-<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>&nbsp; Nov 18, 2016</span></div>
-</div>
-
-<p class="widescreen embedded"><iframe width="100%" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" frameborder="0" allowfullscreen data-src="https://www.youtube.com/embed/xMDdaNLc8DU?rel=0"></iframe></p>
-
-
-<div class="post">
-
-
-
-<p>In May of 1961, <a href="http://history.nasa.gov/moondec.html">President John F. Kennedy told Congress</a> and the rest of the American public that the US was going to send a man to the Moon. Just over 11 years later, as part of the Apollo 17 mission in December 1972, humans set foot on the Moon for the last time.<sup id="fnref:1479489793"><a href="#fn:1479489793" rel="footnote">1</a></sup> The Last Steps is a summary of that final mission, during which NASA accomplished the near-impossible yet again and was met with <a href="http://www.newyorker.com/books/joshua-rothman/live-moon">increasing public indifference</a> about a journey that had taken on the ease of a car trip to grandma&rsquo;s house.</p>
-
-<p><strong>Update:</strong> Perhaps humans will set foot on the Moon sooner than 2060. The European Space Agency is <a href="http://www.wired.co.uk/article/europe-space-agency-moon">planning on a manned mission</a> &ldquo;by 2030&rdquo; and <a href="http://www.reuters.com/article/us-china-space-moon-idUSKCN0XQ0JT">China is shooting for 2036</a>. (via <a href="https://twitter.com/T_fabriek">@T_fabriek</a>)</p>
-
-<ol><li class="footnote" id="fn:1479489793">
-<p>For now, I guess I should add. It&rsquo;s been 44 years since then and at the rate things are going, it might be another 44 years before it happens again. I&rsquo;m hoping for a reboot of the Apollo franchise sooner rather than later, though.<a href="#fnref:1479489793" title="return to article">&#8617;</a></p>
-<p></p>
-</li></ol>
-
-
-<div class="entry-tags-title">More about...</div>
-<ul class="entry-tags">
-<li><a href="/tag/Apollo">Apollo</a></li><li><a href="/tag/Apollo%2017">Apollo 17</a></li><li><a href="/tag/Moon">Moon</a></li><li><a href="/tag/NASA">NASA</a></li><li><a href="/tag/science">science</a></li><li><a href="/tag/space">space</a></li><li><a href="/tag/video">video</a></li>
-</ul>
-
-</div>
-
-<div class="post-spacer-hr"></div>
-
-<h2><a href="/16/11/a-reading-list-for-resistance">A reading list for resistance</a></h2>
-
-<div class="meta">
-<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>&nbsp; Nov 18, 2016</span></div>
-</div>
-
-
-
-<div class="post">
-
-<p>Over at Literary Hub, Emily Temple offers a &ldquo;reading list for resistance&rdquo;, a list of <a href="http://lithub.com/25-works-of-poetry-and-fiction-for-anger-and-action/">25 Works of Fiction and Poetry for Anger and Action</a>.</p>
-
-<p>Included are <a href="https://www.amazon.com/exec/obidos/ASIN/038549081X/ref=nosim/0sil8">The Handmaid&rsquo;s Tale</a> by Margaret Atwood:</p>
-
-<blockquote><p>This is the book women will be whispering about to one another in Trump&rsquo;s America-an all-too-real vision of our country under a totalitarian theocracy where women are stripped of their rights and kept around only as breeders or servants.</p></blockquote>
-
-<p><a href="http://www.amazon.com/exec/obidos/ASIN/B000FC11GA/ref=nosim/0sil8">The Dispossessed</a> by Ursula K. Le Guin:</p>
-
-<blockquote><p>There was a wall. It did not look important. It was built of uncut rocks roughly mortared. An adult could look right over it, and even a child could climb it. Where it crossed the roadway, instead of having a gate it degenerated into mere geometry, a line, an idea of boundary. But the idea was real.</p></blockquote>
-
-<p>And of course, George Orwell&rsquo;s <a href="http://www.amazon.com/exec/obidos/ASIN/B003JTHWKU/ref=nosim/0sil8">1984</a>:</p>
-
-<blockquote><p>To know and not to know, to be conscious of complete truthfulness while telling carefully constructed lies, to hold simultaneously two opinions which cancelled out, knowing them to be contradictory and believing in both of them, to use logic against logic&hellip;</p></blockquote>
-
-<p>1984 was my favorite book for a long time &mdash; I first read it when I was about 10 years old and reread it every year or two well into my 20s. I haven&rsquo;t read it in more than 10 years&hellip;perhaps it&rsquo;s time for another go.</p>
-
-
-<div class="entry-tags-title">More about...</div>
-<ul class="entry-tags">
-<li><a href="/tag/1984">1984</a></li><li><a href="/tag/books">books</a></li><li><a href="/tag/Emily%20Temple">Emily Temple</a></li><li><a href="/tag/George%20Orwell">George Orwell</a></li><li><a href="/tag/lists">lists</a></li>
-</ul>
-
-</div>
-
-<div class="post-spacer-hr"></div>
-
-<h2><a href="/16/11/beeeeeeeeeeeee-mooooooovie">Beeeeeeeeeeeee Mooooooovie</a></h2>
-
-<div class="meta">
-<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>&nbsp; Nov 18, 2016</span></div>
-</div>
-
-<p class="widescreen embedded"><iframe width="100%" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" frameborder="0" allowfullscreen data-src="https://www.youtube.com/embed/ZW-lDX2UcL0?rel=0"></iframe></p>
-
-
-<div class="post">
-
-
-
-<p>This is the trailer for the animated film Bee Movie, except that the action and audio is slowed down every time someone says &ldquo;bee&rdquo;. That is a little bit clever.</p>
-
-
-<div class="entry-tags-title">More about...</div>
-<ul class="entry-tags">
-<li><a href="/tag/Bee%20Movie">Bee Movie</a></li><li><a href="/tag/movies">movies</a></li><li><a href="/tag/remix">remix</a></li><li><a href="/tag/video">video</a></li>
-</ul>
-
-</div>
-
-<div class="post-spacer-hr"></div>
-
-<h2><a href="/16/11/global-weirding-continues-with-massive-arctic-warm-up">Global weirding continues with massive Arctic warm-up</a></h2>
-
-<div class="meta">
-<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>&nbsp; Nov 18, 2016</span></div>
-</div>
-
-
-
-<div class="post">
-
-<p><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" width="900" height="928" border="0" alt="Arctic Warming 2016" data-src="http://also.kottke.org/misc/images/arctic-warming-2016.jpg"></p>
-
-<p>Something is rotten to the north of Denmark. Climate scientists are <a href="https://www.washingtonpost.com/news/energy-environment/wp/2016/11/17/the-north-pole-is-an-insane-36-degrees-warmer-than-normal-as-winter-descends">alarmed at the extreme warmth in the Arctic right now</a>. It&rsquo;s currently dark up there 24 hours a day, which usually means cold temperatures and rapidly freezing ice. Instead, temperatures are <em>rising</em>&hellip;<strong><em>Arctic temps are currently a whopping 36&deg;F above normal</em></strong>.</p>
-
-<blockquote>
-<p>&ldquo;The Arctic warmth is the result of a combination of record-low sea-ice extent for this time of year, probably very thin ice, and plenty of warm/moist air from lower latitudes being driven northward by a very wavy jet stream.&rdquo;</p>
-
-<p>Francis has published research suggesting that the jet stream, which travels from west to east across the Northern Hemisphere in the mid-latitudes, is becoming more wavy and elongated as the Arctic warms faster than the equator does.</p>
-
-<p>&ldquo;It will be fascinating to see if the stratospheric polar vortex continues to be as weak as it is now, which favors a negative Arctic Oscillation and probably a cold mid/late winter to continue over central and eastern Asia and eastern North America. The extreme behavior of the Arctic in 2016 seems to be in no hurry to quit,&rdquo; Francis continued.</p>
-</blockquote>
-
-<p>Is 2017 the year the Arctic finally loses most of the ice cap during the summer?</p>
-
-
-<div class="entry-tags-title">More about...</div>
-<ul class="entry-tags">
-<li><a href="/tag/global%20warming">global warming</a></li><li><a href="/tag/science">science</a></li>
-</ul>
-
-</div>
-
-<div class="post-spacer-hr"></div>
-
-<h2><a href="/16/11/the-aberdeen-bestiary-a-gorgeous-medieval-illuminated-manuscript">The Aberdeen Bestiary, a gorgeous medieval illuminated manuscript</a></h2>
-
-<div class="meta">
-<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>&nbsp; Nov 17, 2016</span></div>
-</div>
-
-<p class="widescreen"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" width="1400" height="677" border="0" alt="Aberdeen Bestiary" data-src="http://also.kottke.org/misc/images/aberdeen-bestiary-01.jpg"></p><p class="widescreen"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" width="1400" height="724" border="0" alt="Aberdeen Bestiary" data-src="http://also.kottke.org/misc/images/aberdeen-bestiary-02.jpg"></p><p class="widescreen"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" width="1401" height="1086" border="0" alt="Aberdeen Bestiary" data-src="http://also.kottke.org/misc/images/aberdeen-bestiary-03.jpg"></p>
-
-
-<div class="post">
-
-
-
-
-
-
-
-<p>A <a href="https://en.wikipedia.org/wiki/Bestiary">bestiary</a> was a type of book popular in the Middle Ages, featuring descriptions of animals accompanied by moral lessons. <a href="http://www.abdn.ac.uk/bestiary/history">The Aberdeen Bestiary</a> is a particularly fine example of a 12th century bestiary.</p>
-
-<blockquote><p>The Aberdeen Bestiary (Aberdeen University Library MS 24) is considered to be one of the best examples of its type due to its lavish and costly illuminations. The manuscript, written and illuminated in England around 1200, is of added interest since it contains notes, sketches and other evidence of the way it was designed and executed.</p></blockquote>
-
-<p>Thanks to the work of the University of Aberdeen in Scotland, where the book has been housed since the 1620s, <a href="http://www.abdn.ac.uk/bestiary/">a high-resolution copy of the book is available to browse online</a>. The level of detail at full magnification is incredible. The text accompanying the top image of a panther is translated as:</p>
-
-<blockquote><p>There is an animal called the panther, multi-coloured, very beautiful and extremely gentle. Physiologus says of it, that it has only the dragon as an enemy. When it has fed and is full, it hides in its den and sleeps. After three days it awakes from its sleep and gives a great roar, and from its mouth comes a very sweet odour, as if it were a mixture of every perfume. When other animals hear its voice, they follow wherever it goes, because of the sweetness of its scent. Only the dragon, hearing its voice, is seized by fear and flees into the caves beneath the earth. There, unable to bear the scent, it grows numbed within itself and remains motionless, as if dead. Thus our Lord Jesus Christ, the true panther, descending from Heaven, snatched us from the power of the devil. And, through his incarnation, he united us to him as sons, taking everything, and &lsquo;leading captivity captive, gave gifts to men&rsquo; (Ephesians, 4:8). The fact that the panther is a multi-coloured animal, signifies Christ, who is as Solomon said the wisdom of God the Father, an understanding spirit, a unique spirit, manifold, true, agreeable, fitting, compassionate, strong, steadfast, serene, all-powerful, all-seeing.</p></blockquote>
-
-<p>Jesus, the true panther. (via <a href="http://hyperallergic.com/338199/a-lavishly-illuminated-medieval-bestiary-goes-online/">hyperallergic</a>)</p>
-
-
-<div class="entry-tags-title">More about...</div>
-<ul class="entry-tags">
-<li><a href="/tag/books">books</a></li><li><a href="/tag/religion">religion</a></li>
-</ul>
-
-</div>
-
-<div class="post-spacer-hr"></div>
-
-<h2><a href="/16/11/urged-to-eat-less-meat-americans-are-actually-eating-more">Urged to eat less meat, Americans are actually eating more</a></h2>
-
-<div class="meta">
-<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>&nbsp; Nov 17, 2016</span></div>
-</div>
-
-
-
-<div class="post">
-
-<p>For most of the past decade, consumption of meat in the United States remained flat or declined.</p>
-
-<p>For environmental, health, and animal welfare advocates, this was great news. Surely it meant that efforts to raise awareness about the disturbing impacts of meat production were inspiring people to cut back on hamburgers and bacon. As Paul Shapiro, vice president of Farm Animal Protection for the Humane Society of the United States, wrote in 2012, &ldquo;The pressure is being felt all over, and for the first time in decades, our overconsumption of meat is beginning to get reined in.&rdquo;</p>
-
-<p>But according to <a href="https://research.rabobank.com/far/en/sectors/animal-protein/chicken-cows-and-pigs-oh-my.html">research</a> by a Dutch bank, <a href="https://research.rabobank.com/far/en/sectors/animal-protein/chicken-cows-and-pigs-oh-my.html">US meat consumption jumped in 2015</a>.</p>
-
-<blockquote><p>Not only was last year noteworthy for the near 5% increase in per capita consumption, but also due to the fact that the growth was achieved without the help of beef, consumption of which was flat. We expect US protein production growth of 2.5% per annum through 2018 &mdash; down from 3% in 2015 &mdash; with beef being the largest contributor relative to pork and poultry.</p></blockquote>
-
-<p>What drove the decline in the first place? Price. It always comes back to supply and demand.</p>
-
-<blockquote>
-<p>Ranchers and farmers trimmed their herds because of the recession, historically high feed costs, and drought in the Great Plains. Meanwhile, domestic disease outbreaks like porcine epidemic diarrhea virus, or PEDv, meant that tens of thousands of hogs never made it to market. So Americans cut back on meat.</p>
-
-<p>But by 2015, many of these issues driving higher prices were resolved. The retail price of beef has dropped by 22 percent, pork by 7 percent, and chicken by 5 percent. So Americans are eating more meat again.</p>
-
-<p>&ldquo;Consumers are responding to falling prices. That&rsquo;s a big part of the story,&rdquo; says Sawyer. The chicken industry, in particular, has also gotten more efficient and more capable of raising chickens fast.</p>
-</blockquote>
-
-<p>I was at the grocery store last night and was shocked by the prices in the meat aisle. Lots of cuts on sale for just a few dollars a pound. (via <a href="http://tinyletter.com/SusanMacMillan/letters/taking-stock-to-eat-or-not-to-eat-meat-double-issue">the latest and particularly excellent issue of Susan MacMillan&rsquo;s newsletter</a>)</p>
-
-
-<div class="entry-tags-title">More about...</div>
-<ul class="entry-tags">
-<li><a href="/tag/economics">economics</a></li><li><a href="/tag/food">food</a></li><li><a href="/tag/USA">USA</a></li>
-</ul>
-
-</div>
-
-<div class="post-spacer-hr"></div>
-
-<h2><a href="/16/11/the-united-red-and-blue-states-of-america">The United Red and Blue States of America</a></h2>
-
-<div class="meta">
-<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>&nbsp; Nov 17, 2016</span></div>
-</div>
-
-<p class="widescreen"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" width="1200" height="764" border="0" alt="United Blue States" data-src="http://also.kottke.org/misc/images/united-blue-states-01.jpg"></p>
-
-
-<div class="post">
-
-
-
-<p>The New York Times took a map of the US and <a href="http://www.nytimes.com/interactive/2016/11/16/us/politics/the-two-americas-of-2016.html">split it in two</a> based on areas that voted for Clinton and Trump in the 2016 election. (Clinton&rsquo;s map is pictured above.)</p>
-
-<blockquote><p>Mrs. Clinton&rsquo;s island nation has large atolls and small island chains with liberal cores, like college towns, Native American reservations and areas with black and Hispanic majorities. While the land area is small, the residents here voted for Mrs. Clinton in large enough numbers to make her the winner of the overall popular vote.</p></blockquote>
-
-<p>That&rsquo;s fun, but it&rsquo;s another reminder of how strictly geographical maps <a href="https://www.washingtonpost.com/graphics/politics/2016-election/how-election-maps-lie/">distort election results</a>.</p>
-
-<p>P.S. They missed a real opportunity to call the chain of islands in the southern states <a href="http://kottke.org/16/10/how-the-cretaceous-coastline-of-north-america-affects-us-presidential-elections">The Cretaceous Atoll</a>.</p>
-
-
-<div class="entry-tags-title">More about...</div>
-<ul class="entry-tags">
-<li><a href="/tag/Donald%20Trump">Donald Trump</a></li><li><a href="/tag/geography">geography</a></li><li><a href="/tag/Hillary%20Clinton">Hillary Clinton</a></li><li><a href="/tag/infoviz">infoviz</a></li><li><a href="/tag/maps">maps</a></li><li><a href="/tag/politics">politics</a></li><li><a href="/tag/USA">USA</a></li>
-</ul>
-
-</div>
-
-<div class="post-spacer-hr"></div>
-
-<h2><a href="/16/11/paperholm-a-tiny-paper-metropolis">Paperholm: a tiny paper metropolis</a></h2>
-
-<div class="meta">
-<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>&nbsp; Nov 17, 2016</span></div>
-</div>
-
-<p class="widescreen"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" width="1100" height="634" border="0" alt="Paperholm" data-src="http://also.kottke.org/misc/images/paperholm-01.jpg"></p>
-
-
-<div class="post">
-
-
-
-<p>Originally conceived as <a href="http://www.thisiscolossal.com/2015/08/charles-young-paper-city/">a year-long project</a>, artist Charles Young keep going and <a href="http://www.paperholm.com/">has built an entire model city out of paper consisting of more than 600 buildings</a>. It&rsquo;s called Paperholm and many of the structures are constructed with moving parts.</p>
-
-<p><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" width="640" height="640" border="0" alt="Paperholm" data-src="http://also.kottke.org/misc/images/paperholm.gif"></p>
-
-<p>I would like to live in some of these buildings, please. (via <a href="http://www.thisiscolossal.com/2016/11/artist-charles-youngs-growing-metropolis-of-635-paper-structures/">colossal</a>)</p>
-
-
-<div class="entry-tags-title">More about...</div>
-<ul class="entry-tags">
-<li><a href="/tag/architecture">architecture</a></li><li><a href="/tag/art">art</a></li><li><a href="/tag/Charles%20Young">Charles Young</a></li>
-</ul>
-
-</div>
-
-<div class="post-spacer-hr"></div>
-
-<h2><a href="/16/11/photographic-reunions">Photographic reunions</a></h2>
-
-<div class="meta">
-<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>&nbsp; Nov 16, 2016</span></div>
-</div>
-
-<p class="widescreen"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" width="1401" height="981" border="0" alt="Chris Porsz" data-src="http://also.kottke.org/misc/images/chris-porsz-01.jpg"></p><p class="widescreen"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" width="1401" height="479" border="0" alt="Chris Porsz" data-src="http://also.kottke.org/misc/images/chris-porsz-02.jpg"></p>
-
-
-<div class="post">
-
-
-
-
-
-<p>Photographer Chris Porsz has been taking candid photos of people on the streets of the English city of Peterborough since the 1970s. Recently, he tracked down a bunch of his subjects &mdash; many of them strangers &mdash; <a href="http://www.chrisporsz.com/peterborough---reunions.html">to recreate photos taken decades before</a>, often in the same location. See also <a href="https://en.wikipedia.org/wiki/Up_Series">The Up Series</a>, I should think.</p>
-
-<p>You can order a book of the photographs <a href="http://www.chrisporsz.com/the-books.html">directly from Porsz&rsquo;s website</a>.</p>
-
-
-<div class="entry-tags-title">More about...</div>
-<ul class="entry-tags">
-<li><a href="/tag/Chris%20Porsz">Chris Porsz</a></li><li><a href="/tag/photography">photography</a></li><li><a href="/tag/time">time</a></li><li><a href="/tag/UK">UK</a></li>
-</ul>
-
-</div>
-
-<div class="post-spacer-hr"></div>
-
-<h2><a href="/16/11/legacy-david-bowies-greatest-hits-compilation">Legacy: David Bowie&#8217;s greatest hits compilation</a></h2>
-
-<div class="meta">
-<div class="author"><span class="pre-name">posted by </span><a href="http://www.kottke.org">Jason Kottke</a> <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true" style="font-weight:300;"></i>&nbsp; Nov 16, 2016</span></div>
-</div>
-
-<p class="widescreen"><iframe src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" width="100%" height="360" frameborder="0" allowtransparency="true" data-src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A3nSP0MJ9XyYZjCRowFaUbo"></iframe></p>
-
-
-<div class="post">
-
-
-
-<p>A pair of greatest hits albums by David Bowie <a href="http://www.davidbowie.com/news/bowie-legacy-compilation-due-november-56331">have been released</a>.</p>
-
-<blockquote>
-<p>The album collects together a selection of Bowie&rsquo;s most popular tracks and singles, from 1969&rsquo;s &lsquo;Space Oddity&rsquo;, through to the final singles &lsquo;Lazarus&rsquo; and &lsquo;I Can&rsquo;t Give Everything Away&rsquo;, issued earlier this year.</p>
-
-<p>BOWIE - LEGACY will be available as a 1 CD and a Deluxe 2 CD from November 11th. These will be followed by a double vinyl album version on January 6th, 2017.</p>
-</blockquote>
-
-<p>The album is available in <a href="https://open.spotify.com/album/5Pr1sAQ9i2unvVaEHnKIB5">a shorter 1-disc length</a> and <a href="https://open.spotify.com/album/3nSP0MJ9XyYZjCRowFaUbo">as a double album</a> (embedded above). 2016 took Bowie from us, but maybe a little Bowie can help us through the rest of the year.</p>
-
-
-<div class="entry-tags-title">More about...</div>
-<ul class="entry-tags">
-<li><a href="/tag/David%20Bowie">David Bowie</a></li><li><a href="/tag/music">music</a></li>
-</ul>
-
-</div>
-
-<div class="post-spacer-hr"></div>
-
-
-<p class="page-nav"><a href="/?p=2">Older posts &nbsp;<i class="fa fa-arrow-right"></i></a></p><p class="page-nav-more">And much more <a href="/everfresh">in the archives</a>...</p>
-</div>
-
-<div class="spacer"></div>
-
-<div id="footer">
-
-<div id="bottom-nav-wide"><span id="loving-you">kottke.org, loving you since 1998</span><a href="/" title="home">home</a><a href="/about" title="about">about</a><a href="/everfresh" title="archives">archives + tags</a><a href="/members">membership!</a><a href="/tag/burgers" title="hamburger menu" aria-hidden="true"><i class="fa fa-bars"></i></a></div>
-
-<div id="bottom-nav-medium"><a href="/" title="home">home</a><a href="/about" title="about">about</a><a href="/everfresh" title="archives">archives + tags</a><a href="/members">membership!</a><a href="/tag/burgers" title="hamburger menu" aria-hidden="true"><i class="fa fa-bars"></i></a></div>
-
-<div id="bottom-nav-narrow"><a href="/" title="home">home</a><a href="/about" title="about">about</a><a href="/everfresh" title="archives">archives</a><a href="/tag/burgers" title="hamburger menu" aria-hidden="true"><i class="fa fa-bars"></i></a></div>
-
-</div>
-
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-871179-1");
-pageTracker._trackPageview();
-} catch(err) {}</script>
 
 </body>
 </html>

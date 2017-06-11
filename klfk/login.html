@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+	<title>Kids Learn From Kids</title>
+<link rel="shortcut icon" href="favicon (2).ico" type="image/x-icon"><link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+		<div id="content">
+			<h2 style="text-align:center">Login</h2>
+		<img src = "happykids.png" style="width:230px;height:150px;margin:auto;display:block">	
+		<on class="loginform cf">
+<form name="login" action="Feed.html"  style="margin: 0 auto; width:350px; margin-top:30px"accept-charset="utf-8">
+    <label for="usermail">Email</label>
+    <input type="email" name="usermail" placeholder="yourname@email.com" required>
+<br></br>
+	<label for="password">Password</label>
+    <input type="password1" name="password" placeholder="password" required>
+	<br></br>
+    <input type="submit" value="Login">
+</form>
+</section>
+<h2 style="text-align:center">Don't have an account?</h2>
+<!-- Button to open the modal -->
+<button onclick="document.getElementById('id01').style.display='block'">SIGN UP</button>
+
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="container">
+      <label><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+<br></br>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+<br></br>
+      <label><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+<br></br>      
+<input type="checkbox" checked="checked"> Remember me
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+		<div id="clear"></div>
+</body>
+</html>
